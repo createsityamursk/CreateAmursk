@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ЖБИ-Амурск — производство железобетонных изделий в Амурске</title>
+<meta name="description" content="Завод ЖБИ в Амурске: плиты перекрытия, кольца колодцев, бордюры, сваи. Собственное производство в Хабаровском крае, доставка по краю и ДФО. Телефон: [ТЕЛЕФОН].">
+<style>
+:root{
+  --ink:#1e2328;
+  --ink-2:#2c333a;
+  --paper:#f4f2ee;
+  --card:#ffffff;
+  --line:#d9d5cd;
+  --accent:#e8621c;
+  --accent-dk:#c94f0f;
+  --muted:#6b7076;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Segoe UI',Arial,sans-serif;
+  background:var(--paper);
+  color:var(--ink);
+  line-height:1.55;
+}
+a{color:var(--accent-dk)}
+img{max-width:100%}
+
+/* ---------- Шапка ---------- */
+.topbar{
+  background:var(--ink);
+  color:#fff;
+}
+.topbar-in{
+  max-width:1180px;margin:0 auto;
+  padding:14px 20px;
+  display:flex;align-items:center;gap:18px;flex-wrap:wrap;
+}
+.logo{
+  display:flex;align-items:center;gap:12px;
+  text-decoration:none;color:#fff;
+}
+.logo-mark{
+  width:46px;height:46px;border-radius:8px;
+  background:linear-gradient(135deg,var(--accent) 0%,#f08a3e 100%);
+  display:flex;align-items:center;justify-content:center;
+  font-weight:800;font-size:20px;color:#fff;letter-spacing:-1px;
+  flex-shrink:0;
+}
+.logo-text{line-height:1.15}
+.logo-text b{font-size:20px;letter-spacing:.5px;display:block}
+.logo-text span{font-size:11px;color:#b8bdc2;text-transform:uppercase;letter-spacing:1.5px}
+.top-contacts{margin-left:auto;text-align:right}
+.top-contacts .phone{
+  display:block;color:#fff;text-decoration:none;
+  font-size:22px;font-weight:700;white-space:nowrap;
+}
+.top-contacts .phone:hover{color:var(--accent)}
+.top-contacts small{color:#9aa0a6;font-size:12px;display:block}
+.btn{
+  display:inline-block;padding:12px 22px;border-radius:6px;
+  font-weight:700;font-size:15px;text-decoration:none;
+  border:none;cursor:pointer;transition:.15s;
+  text-align:center;
+}
+.btn-accent{background:var(--accent);color:#fff}
+.btn-accent:hover{background:var(--accent-dk)}
+.btn-outline{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.5)}
+.btn-outline:hover{border-color:#fff}
+
+/* ---------- Каркас: меню слева + контент ---------- */
+.frame{
+  max-width:1180px;margin:0 auto;
+  padding:28px 20px;
+  display:flex;gap:28px;
+  align-items:flex-start;
+}
+.side{
+  width:220px;flex-shrink:0;
+  position:sticky;top:20px;
+  display:flex;flex-direction:column;gap:10px;
+}
+.side a{
+  display:block;padding:13px 18px;
+  background:var(--card);
+  border:1px solid var(--line);
+  border-left:4px solid var(--line);
+  border-radius:6px;
+  color:var(--ink);text-decoration:none;
+  font-weight:700;font-size:15px;
+  text-transform:uppercase;letter-spacing:.5px;
+  transition:.15s;
+}
+.side a:hover{border-left-color:var(--accent);color:var(--accent-dk)}
+.side a.act{background:var(--ink);color:#fff;border-color:var(--ink);border-left-color:var(--accent)}
+.side .side-note{
+  margin-top:6px;padding:14px 16px;
+  background:#e9f0e6;border-radius:6px;
+  font-size:13px;color:#3c5a34;
+}
+.side .side-note b{display:block;margin-bottom:4px}
+
+main{flex:1;min-width:0}
+
+/* ---------- Секции ---------- */
+section{margin-bottom:40px}
+.sec-head{
+  display:flex;align-items:baseline;gap:14px;
+  border-bottom:2px solid var(--ink);
+  padding-bottom:8px;margin-bottom:20px;
+}
+.sec-head h2{font-size:24px;text-transform:uppercase;letter-spacing:.5px}
+.sec-head .count{color:var(--muted);font-size:14px}
+
+/* Новости */
+.news{display:flex;flex-direction:column;gap:14px}
+.news-item{
+  background:var(--card);border:1px solid var(--line);
+  border-radius:8px;padding:18px 20px;
+  display:flex;gap:18px;
+}
+.news-date{
+  flex-shrink:0;width:64px;text-align:center;
+  background:var(--ink);color:#fff;border-radius:6px;
+  padding:8px 4px;align-self:flex-start;
+}
+.news-date b{display:block;font-size:20px}
+.news-date span{font-size:11px;text-transform:uppercase;color:#b8bdc2}
+.news-item h3{font-size:17px;margin-bottom:6px}
+.news-item p{font-size:14px;color:var(--muted)}
+.tag{
+  display:inline-block;font-size:11px;font-weight:700;
+  text-transform:uppercase;letter-spacing:.5px;
+  padding:2px 8px;border-radius:4px;margin-left:8px;vertical-align:2px;
+}
+.tag-prod{background:#e8f2e5;color:#3c7a2e}
+.tag-price{background:#fdf0e4;color:var(--accent-dk)}
+.tag-comp{background:#e8edf6;color:#34508f}
+
+/* Изделия */
+.prod-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px}
+.prod{
+  background:var(--card);border:1px solid var(--line);border-radius:8px;
+  overflow:hidden;transition:.15s;
+}
+.prod:hover{box-shadow:0 4px 16px rgba(0,0,0,.08)}
+.prod-img{background:#dfe0dc;height:140px;display:flex;align-items:center;justify-content:center;color:#9aa096;font-size:13px}
+.prod-img img{width:100%;height:140px;object-fit:cover}
+.prod-body{padding:14px 16px}
+.prod-body h3{font-size:16px;margin-bottom:6px}
+.prod-body p{font-size:13px;color:var(--muted);margin-bottom:10px}
+.prod-price{font-weight:700;color:var(--accent-dk);font-size:15px}
+
+/* Цены */
+.price-wrap{overflow-x:auto;background:var(--card);border:1px solid var(--line);border-radius:8px}
+table{width:100%;border-collapse:collapse;font-size:14px;min-width:520px}
+th{
+  text-align:left;background:var(--ink);color:#fff;
+  padding:12px 16px;font-size:13px;text-transform:uppercase;letter-spacing:.5px;
+}
+td{padding:12px 16px;border-top:1px solid var(--line)}
+tr:hover td{background:#faf9f6}
+td.price{font-weight:700;color:var(--accent-dk);white-space:nowrap}
+.price-note{margin-top:12px;font-size:13px;color:var(--muted)}
+
+/* О заводе */
+.about{
+  background:var(--ink);color:#fff;border-radius:10px;
+  padding:28px;
+}
+.about h2{color:#fff}
+.about p{color:#c9ced3;font-size:15px;margin-bottom:12px}
+.about-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
+.about-stats div{
+  background:rgba(255,255,255,.06);border-radius:8px;padding:16px;text-align:center;
+}
+.about-stats b{display:block;font-size:26px;color:var(--accent)}
+.about-stats span{font-size:12px;color:#9aa0a6;text-transform:uppercase;letter-spacing:.5px}
+
+/* Заявка */
+.order{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:26px}
+.order-form{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:16px}
+.field label{display:block;font-size:13px;font-weight:600;margin-bottom:5px}
+.field input,.field select,.field textarea{
+  width:100%;padding:11px 13px;border:1px solid var(--line);border-radius:6px;
+  font-size:15px;font-family:inherit;background:#fbfaf8;
+}
+.field input:focus,.field textarea:focus{outline:2px solid var(--accent);border-color:var(--accent)}
+.field-full{grid-column:1/-1}
+.agree{grid-column:1/-1;font-size:12px;color:var(--muted);display:flex;gap:8px;align-items:flex-start}
+.agree input{width:auto;margin-top:3px}
+.order-form .btn{grid-column:1/-1}
+
+/* Подвал */
+footer{background:var(--ink);color:#9aa0a6;margin-top:50px}
+.footer-in{
+  max-width:1180px;margin:0 auto;padding:34px 20px;
+  display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:30px;
+}
+footer h4{color:#fff;font-size:14px;text-transform:uppercase;letter-spacing:.5px;margin-bottom:12px}
+footer a{color:#d7dadd;text-decoration:none}
+footer a:hover{color:var(--accent)}
+.footer-in p,.footer-in li{font-size:14px}
+.footer-in ul{list-style:none}
+.footer-in li{margin-bottom:8px}
+.copy{border-top:1px solid rgba(255,255,255,.1);text-align:center;padding:16px;font-size:12px;color:#6b7076}
+
+/* ---------- Мобильная версия ---------- */
+@media (max-width:900px){
+  .frame{flex-direction:column}
+  .side{position:static;width:100%;flex-direction:row;flex-wrap:wrap}
+  .side a{flex:1 1 40%;text-align:center;padding:12px 8px}
+  .side .side-note{flex-basis:100%}
+  .footer-in{grid-template-columns:1fr}
+  .about-stats{grid-template-columns:1fr 1fr}
+  .topbar-in{justify-content:center;text-align:center}
+  .top-contacts{margin:0;text-align:center;width:100%}
+}
+@media (max-width:560px){
+  .order-form{grid-template-columns:1fr}
+  .news-item{flex-direction:column;gap:10px}
+  .about-stats{grid-template-columns:1fr}
+  .logo-text b{font-size:17px}
+}
+</style>
+</head>
+<body>
+
+<!-- ===== ШАПКА ===== -->
+<header class="topbar">
+  <div class="topbar-in">
+    <a href="#main" class="logo">
+      <span class="logo-mark">ЖБ</span>
+      <span class="logo-text"><b>ЖБИ-АМУРСК</b><span>производство ЖБИ</span></span>
+    </a>
+    <div class="top-contacts">
+      <a class="phone" href="tel:+7XXXXXXXXXX">[ТЕЛЕФОН]</a>
+      <small>пн–пт 8:00–17:00, сб 9:00–14:00</small>
+    </div>
+    <a class="btn btn-accent" href="#order">Оставить заявку</a>
+  </div>
+</header>
+
+<div class="frame" id="main">
+
+  <!-- ===== МЕНЮ СЛЕВА (по эскизу) ===== -->
+  <nav class="side">
+    <a href="#main" class="act">Главная</a>
+    <a href="#products">Изделия</a>
+    <a href="#prices">Цены</a>
+    <a href="#about">О заводе</a>
+    <a href="#order">Заявка</a>
+    <a href="#contacts">Контакты</a>
+    <div class="side-note">
+      <b>Работаем с юрлицами</b>
+      Отгрузка по счёту, работаем с НДС. Реквизиты — внизу страницы.
+    </div>
+  </nav>
+
+  <!-- ===== КОНТЕНТ ===== -->
+  <main>
+
+    <!-- НОВОСТИ -->
+    <section id="news">
+      <div class="sec-head">
+        <h2>Новости</h2>
+        <span class="count">свежее на заводе</span>
+      </div>
+      <div class="news">
+        <article class="news-item">
+          <div class="news-date"><b>18</b><span>ноября</span></div>
+          <div>
+            <h3>Заголовок новости <span class="tag tag-prod">производство</span></h3>
+            <p>[ТЕКСТ НОВОСТИ: 2–3 предложения о новой партии, смене графика, новой продукции.]
+            Первую новость можно написать о запуске сайта или новой линии.</p>
+          </div>
+        </article>
+        <article class="news-item">
+          <div class="news-date"><b>05</b><span>ноября</span></div>
+          <div>
+            <h3>Обновление цен на ноябрь <span class="tag tag-price">цены</span></h3>
+            <p>[ТЕКСТ НОВОСТИ.] Цены в таблице ниже уже актуальны — уточняйте у менеджера при заказе объёма.</p>
+          </div>
+        </article>
+        <article class="news-item">
+          <div class="news-date"><b>28</b><span>октября</span></div>
+          <div>
+            <h3>Отгрузка для [НАЗВАНИЕ ОБЪЕКТА] <span class="tag tag-comp">объекты</span></h3>
+            <p>[ТЕКСТ НОВОСТИ: краткий кейс — что отгрузили, куда, в какой срок.]</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ИЗДЕЛИЯ -->
+    <section id="products">
+      <div class="sec-head"><h2>Изделия</h2></div>
+      <div class="prod-grid">
+        <!-- Замените класс prod-img на <img src="img/1.jpg"> когда добавите фото -->
+        <div class="prod">
+          <div class="prod-img">[ФОТО ИЗДЕЛИЯ]</div>
+          <div class="prod-body">
+            <h3>Плиты перекрытия ПК</h3>
+            <p>Многопустотные, 1.2–2.4 м ширина, до 6 м длина.</p>
+            <span class="prod-price">от [ЦЕНА] ₽/шт</span>
+          </div>
+        </div>
+        <div class="prod">
+          <div class="prod-img">[ФОТО ИЗДЕЛИЯ]</div>
+          <div class="prod-body">
+            <h3>Кольца колодцев КС</h3>
+            <p>КС 10.9, 15.9, 20.9 + днища и крышки в комплекте.</p>
+            <span class="prod-price">от [ЦЕНА] ₽/шт</span>
+          </div>
+        </div>
+        <div class="prod">
+          <div class="prod-img">[ФОТО ИЗДЕЛИЯ]</div>
+          <div class="prod-body">
+            <h3>Бордюр дорожный</h3>
+            <p>БР 100.30.15 и другие размеры, с доставкой на объект.</p>
+            <span class="prod-price">от [ЦЕНА] ₽/шт</span>
+          </div>
+        </div>
+        <div class="prod">
+          <div class="prod-img">[ФОТО ИЗДЕЛИЯ]</div>
+          <div class="prod-body">
+            <h3>Сваи и стойки</h3>
+            <p>Забивные сваи, стойки ЛЭП по ГОСТ и чертежам.</p>
+            <span class="prod-price">от [ЦЕНА] ₽/шт</span>
+          </div>
+        </div>
+        <div class="prod">
+          <div class="prod-img">[ФОТО ИЗДЕЛИЯ]</div>
+          <div class="prod-body">
+            <h3>Лотки и плитка</h3>
+            <p>Лотки дренажные, плитка тротуарная, лестничные ступени.</p>
+            <span class="prod-price">от [ЦЕНА] ₽/шт</span>
+          </div>
+        </div>
+        <div class="prod">
+          <div class="prod-img">[ФОТО ИЗДЕЛИЯ]</div>
+          <div class="prod-body">
+            <h3>Бетон и раствор</h3>
+            <p>М100–М450, доставка миксером, паспорт на каждую партию.</p>
+            <span class="prod-price">от [ЦЕНА] ₽/м³</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ЦЕНЫ -->
+    <section id="prices">
+      <div class="sec-head"><h2>Цены</h2></div>
+      <div class="price-wrap">
+        <table>
+          <thead>
+            <tr><th>Изделие</th><th>Марка / типоразмер</th><th>Цена, ₽</th><th>Наличие</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Плита перекрытия ПК</td><td>ПК 60.12.8</td><td class="price">[ЦЕНА]</td><td>[есть / под заказ]</td></tr>
+            <tr><td>Кольцо колодца</td><td>КС 10.9</td><td class="price">[ЦЕНА]</td><td>[есть]</td></tr>
+            <tr><td>Кольцо колодца</td><td>КС 15.9</td><td class="price">[ЦЕНА]</td><td>[есть]</td></tr>
+            <tr><td>Бордюр дорожный</td><td>БР 100.30.15</td><td class="price">[ЦЕНА]</td><td>[есть]</td></tr>
+            <tr><td>Бетон</td><td>М300 (B22,5)</td><td class="price">[ЦЕНА] ₽/м³</td><td>[под заказ]</td></tr>
+            <tr><td>Свайное и нестандартное</td><td>по чертежу</td><td class="price">по запросу</td><td>расчёт за 1 день</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="price-note">Цены указаны ориентировочно и зависят от объёма и даты отгрузки. Точный счёт — после заявки или звонка на [ТЕЛЕФОН].</p>
+    </section>
+
+    <!-- О ЗАВОДЕ -->
+    <section id="about">
+      <div class="sec-head"><h2>О заводе</h2></div>
+      <div class="about">
+        <h2>Собственное производство в Амурске</h2>
+        <p>Мы — завод ЖБИ в городе Амурск Хабаровского края. Это значит: без посредников и наценок за доставку из центральной России, контроль качества на месте и сроки, в которые можно поверить.</p>
+        <p>Производим плиты перекрытия, кольца колодцев, бордюры, сваи, лотки и товарный бетон. Выпускаем изделия по типовым сериям ГОСТ и по чертежам заказчика. Отгружаем с собственного склада и ведём работу с вагонными поставками.</p>
+        <div class="about-stats">
+          <div><b>[XX]</b><span>лет на рынке</span></div>
+          <div><b>[XXX]</b><span>наименований ЖБИ</span></div>
+          <div><b>[XX]</b><span>м³ бетона/сутки</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ЗАЯВКА -->
+    <section id="order">
+      <div class="sec-head"><h2>Оставить заявку</h2></div>
+      <div class="order">
+        <p>Опишите заказ — менеджер перезвонит в рабочее время и назовёт цену и срок. Можно просто написать название изделий и количество.</p>
+        <form class="order-form" id="leadForm">
+          <div class="field">
+            <label for="f-name">Ваше имя *</label>
+            <input type="text" id="f-name" name="name" required>
+          </div>
+          <div class="field">
+            <label for="f-phone">Телефон *</label>
+            <input type="tel" id="f-phone" name="phone" required placeholder="+7 ___ ___-__-__">
+          </div>
+          <div class="field">
+            <label for="f-city">Город / объект</label>
+            <input type="text" id="f-city" name="city" placeholder="Амурск, Хабаровск...">
+          </div>
+          <div class="field">
+            <label for="f-type">Что нужно</label>
+            <select id="f-type" name="type">
+              <option>Изделия ЖБИ</option>
+              <option>Бетон / раствор</option>
+              <option>Изготовление по чертежу</option>
+              <option>Другое</option>
+            </select>
+          </div>
+          <div class="field field-full">
+            <label for="f-msg">Комментарий к заявке</label>
+            <textarea id="f-msg" name="comment" rows="4" placeholder="Например: 30 колец КС 15.9 с доставкой на объект в Комсомольске"></textarea>
+          </div>
+          <label class="agree">
+            <input type="checkbox" required>
+            <span>Согласен с [политикой обработки персональных данных] и даю согласие на их обработку (152-ФЗ)</span>
+          </label>
+          <button type="submit" class="btn btn-accent">Отправить заявку</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- КАРТА -->
+    <section id="contacts">
+      <div class="sec-head"><h2>Контакты</h2></div>
+      <div class="order">
+        <p><b>Адрес:</b> г. Амурск, ул. [УЛИЦА], д. [НОМЕР] (производственная база)</p>
+        <p><b>Телефон:</b> [ТЕЛЕФОН] &nbsp; <b>Email:</b> [EMAIL]</p>
+        <p><b>Мессенджеры:</b> WhatsApp [НОМЕР], Telegram [НИК]</p>
+        <p><b>Реквизиты:</b> [НАЗВАНИЕ ООО / ИП], ИНН [ИНН], ОГРН [ОГРН]</p>
+      </div>
+      <!-- Замените координаты в src на свои, ссылку на карту берите из Яндекс.Карт: Меню → Поделиться → Встроить карту -->
+      <iframe src="https://yandex.ru/map-widget/v1/?ll=137.007%2C50.290&z=13" width="100%" height="360" frameborder="0" style="border-radius:8px;margin-top:16px" loading="lazy" title="Карта Амурска"></iframe>
+    </section>
+
+  </main>
+</div>
+
+<!-- ===== ПОДВАЛ ===== -->
+<footer id="footer">
+  <div class="footer-in">
+    <div>
+      <h4>ЖБИ-АМУРСК</h4>
+      <p>Собственное производство железобетонных изделий в Амурске. Плиты, кольца, бордюры, сваи, бетон. Доставка по Хабаровскому краю и ДФО.</p>
+    </div>
+    <div>
+      <h4>Разделы</h4>
+      <ul>
+        <li><a href="#news">Новости</a></li>
+        <li><a href="#products">Изделия</a></li>
+        <li><a href="#prices">Цены</a></li>
+        <li><a href="#about">О заводе</a></li>
+        <li><a href="#order">Заявка</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Контакты</h4>
+      <p>[ТЕЛЕФОН]<br>[EMAIL]<br>г. Амурск, ул. [УЛИЦА], д. [НОМЕР]</p>
+      <p style="margin-top:10px"><a href="https://wa.me/[НОМЕР_БЕЗ_ПЛЮСА]">WhatsApp</a> · <a href="https://t.me/[НИК]">Telegram</a></p>
+    </div>
+  </div>
+  <div class="copy">© [ГОРЯ], ЖБИ-Амурск. Все права защищены. <a href="#" style="color:#6b7076">Политика конфиденциальности</a></div>
+</footer>
+
+<script>
+// Подсветка активного пункта меню при прокрутке
+const links = document.querySelectorAll('.side a');
+const secs = [...links].map(l => document.querySelector(l.getAttribute('href'))).filter(Boolean);
+window.addEventListener('scroll', () => {
+  const y = window.scrollY + 120;
+  let idx = 0;
+  secs.forEach((s, i) => { if (s.offsetTop <= y) idx = i; });
+  links.forEach(l => l.classList.remove('act'));
+  if (links[idx]) links[idx].classList.add('act');
+});
+
+// Демо-режим формы (на GitHub Pages сервера нет)
+document.getElementById('leadForm').addEventListener('submit', e => {
+  e.preventDefault();
+  alert('Заявка в демо-режиме: с текущего сайта она никуда не отправляется.\n\nЧтобы форма работала, подключите сервис форм — инструкция в README.');
+});
+</script>
+</body>
+</html>
