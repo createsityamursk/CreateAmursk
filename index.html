@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Изготовление трафаретов на заказ в Амурске — лазерная резка, Хабаровский край</title>
+<meta name="description" content="Собственное производство трафаретов в Амурске. Лазерная и плоттерная резка по вашим размерам. Промышленные, декоративные, одноразовые трафареты. Срок от 1 дня. Расчет по макету за 15 минут.">
+<meta name="keywords" content="изготовление трафаретов Амурск, трафареты на заказ Хабаровский край, лазерная резка трафаретов, трафарет для маркировки труб">
+<style>
+  :root{
+    --dark:#2b2e33; --dark2:#1f2226; --accent:#f57a1f; --accent-h:#d96611;
+    --light:#f7f7f5; --gray:#6b7076; --line:#e3e5e8; --white:#fff;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:"Segoe UI",Arial,sans-serif;color:var(--dark);background:var(--white);line-height:1.6}
+  img{max-width:100%;display:block}
+  a{text-decoration:none;color:inherit}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+  section{padding:70px 0}
+  h1,h2,h3{line-height:1.25}
+  h2{font-size:clamp(26px,4vw,36px);margin-bottom:14px}
+  .sub{color:var(--gray);max-width:720px;margin-bottom:40px;font-size:17px}
+  .tag{display:inline-block;background:rgba(245,122,31,.12);color:var(--accent-h);font-weight:700;font-size:13px;letter-spacing:.08em;text-transform:uppercase;padding:5px 12px;border-radius:4px;margin-bottom:16px}
+
+  /* header */
+  header{position:sticky;top:0;z-index:100;background:var(--dark2);color:#fff;box-shadow:0 2px 12px rgba(0,0,0,.25)}
+  .hdr{display:flex;align-items:center;gap:24px;padding:14px 0;flex-wrap:wrap}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px}
+  .logo .mark{width:38px;height:38px;background:var(--accent);border-radius:6px;display:grid;place-items:center;color:#fff;font-size:19px;font-weight:900;flex:none}
+  .logo small{display:block;font-size:11px;font-weight:400;color:#aab0b6;letter-spacing:.02em}
+  nav{margin-left:auto;display:flex;gap:26px;font-size:15px;flex-wrap:wrap}
+  nav a{color:#d6d9dd;padding:4px 0;border-bottom:2px solid transparent}
+  nav a:hover{color:#fff;border-color:var(--accent)}
+  .hdr-cta{display:flex;align-items:center;gap:18px}
+  .phone{font-weight:800;font-size:18px;color:#fff;white-space:nowrap}
+  .phone:hover{color:var(--accent)}
+  .btn{display:inline-block;background:var(--accent);color:#fff;font-weight:700;font-size:15px;padding:13px 26px;border:none;border-radius:6px;cursor:pointer;transition:.2s;text-align:center}
+  .btn:hover{background:var(--accent-h)}
+  .btn.ghost-w{background:transparent;border:2px solid #fff;color:#fff}
+  .btn.ghost-w:hover{background:#fff;color:var(--dark)}
+  .burger{display:none;background:none;border:none;cursor:pointer;padding:6px}
+  .burger span{display:block;width:26px;height:3px;background:#fff;margin:5px 0;border-radius:2px}
+
+  /* hero */
+  .hero{background:linear-gradient(105deg,rgba(31,34,38,.94) 0%,rgba(31,34,38,.82) 55%,rgba(31,34,38,.55) 100%),url("img/hero-laser.jpg") center/cover no-repeat;color:#fff;padding:110px 0 100px}
+  .hero h1{font-size:clamp(30px,5vw,48px);max-width:820px;margin-bottom:18px}
+  .hero p{font-size:18px;color:#cfd4d9;max-width:640px;margin-bottom:34px}
+  .hero .btns{display:flex;gap:14px;flex-wrap:wrap}
+  .hero-badges{display:flex;gap:28px;margin-top:48px;flex-wrap:wrap}
+  .hero-badges div{border-left:3px solid var(--accent);padding-left:14px}
+  .hero-badges b{display:block;font-size:22px}
+  .hero-badges span{font-size:13px;color:#aab0b6}
+
+  /* cards */
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px}
+  .card{background:var(--light);border:1px solid var(--line);border-radius:10px;padding:28px;transition:.2s}
+  .card:hover{border-color:var(--accent);box-shadow:0 6px 20px rgba(0,0,0,.07);transform:translateY(-3px)}
+  .card .ico{width:52px;height:52px;border-radius:8px;background:var(--accent);color:#fff;display:grid;place-items:center;font-size:26px;margin-bottom:16px}
+  .card h3{font-size:19px;margin-bottom:8px}
+  .card p{font-size:15px;color:var(--gray);margin-bottom:10px}
+  .card .mat{font-size:13px;color:var(--dark);font-weight:600;background:#eceef0;border-radius:5px;padding:6px 10px;display:inline-block}
+
+  /* dark section */
+  .dark{background:var(--dark2);color:#fff}
+  .dark .sub{color:#aab0b6}
+  .dark .card{background:#2b2e33;border-color:#3a3e44}
+  .dark .card h3{color:#fff}
+  .dark .card p{color:#aab0b6}
+
+  /* steps */
+  .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px;counter-reset:step}
+  .step{position:relative;background:var(--light);border:1px solid var(--line);border-radius:10px;padding:26px 22px 22px 66px}
+  .step::before{counter-increment:step;content:counter(step);position:absolute;left:20px;top:24px;width:32px;height:32px;border-radius:50%;background:var(--accent);color:#fff;font-weight:800;display:grid;place-items:center}
+  .step h3{font-size:17px;margin-bottom:6px}
+  .step p{font-size:14px;color:var(--gray)}
+
+  /* portfolio */
+  .filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:26px}
+  .filter{background:#2b2e33;border:1px solid #3a3e44;color:#d6d9dd;padding:9px 18px;border-radius:6px;cursor:pointer;font-size:14px;font-weight:600;transition:.2s}
+  .filter.on,.filter:hover{background:var(--accent);border-color:var(--accent);color:#fff}
+  .gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(255px,1fr));gap:18px}
+  .ph{position:relative;border-radius:10px;overflow:hidden;aspect-ratio:4/3;background:#3a3e44}
+  .ph img{width:100%;height:100%;object-fit:cover;transition:.3s}
+  .ph:hover img{transform:scale(1.05)}
+  .ph figcaption{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(31,34,38,.9));color:#fff;padding:34px 14px 12px;font-size:14px;font-weight:600}
+
+  /* prices */
+  .price-table{width:100%;border-collapse:collapse;background:var(--light);border-radius:10px;overflow:hidden}
+  .price-table th,.price-table td{padding:14px 18px;text-align:left;border-bottom:1px solid var(--line);font-size:15px}
+  .price-table th{background:var(--dark2);color:#fff;font-size:14px;text-transform:uppercase;letter-spacing:.04em}
+  .price-table td:last-child{font-weight:800;color:var(--accent-h);white-space:nowrap}
+  .price-note{margin-top:18px;font-size:15px;color:var(--gray)}
+  .price-note b{color:var(--dark)}
+
+  /* about */
+  .about{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:center}
+  .about ul{list-style:none;margin-top:18px}
+  .about li{padding-left:30px;position:relative;margin-bottom:10px;color:#d6d9dd}
+  .about li::before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:800}
+  .about-img{border-radius:12px;overflow:hidden;aspect-ratio:4/3;background:#3a3e44 url("img/workshop.jpg") center/cover}
+
+  /* form */
+  .form-sec{background:var(--dark);color:#fff}
+  .form-box{max-width:640px;margin:0 auto;background:#34383e;border-radius:12px;padding:36px}
+  .form-box label{display:block;font-size:14px;color:#aab0b6;margin-bottom:6px}
+  .form-box input[type=text],.form-box input[type=tel],.form-box textarea,.form-box input[type=file]{width:100%;background:#24272b;border:1px solid #454a50;color:#fff;border-radius:6px;padding:12px 14px;font-size:15px;margin-bottom:16px;font-family:inherit}
+  .form-box input:focus,.form-box textarea:focus{outline:none;border-color:var(--accent)}
+  .form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .file-wrap{border:2px dashed #565b62;border-radius:8px;padding:18px;text-align:center;margin-bottom:0;font-size:14px;color:#aab0b6;cursor:pointer}
+  .file-wrap:hover{border-color:var(--accent);color:#fff}
+  .chk{display:flex;gap:10px;align-items:flex-start;font-size:13px;color:#aab0b6;margin-bottom:18px}
+  .chk input{width:auto;margin-top:3px}
+  .form-msg{display:none;color:#7ddc8a;font-weight:600;margin-top:12px}
+
+  /* footer */
+  footer{background:var(--dark2);color:#aab0b6;padding:56px 0 28px;font-size:14px}
+  .ftr{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:34px;margin-bottom:34px}
+  footer h3{color:#fff;font-size:16px;margin-bottom:14px}
+  footer a{color:#aab0b6}
+  footer a:hover{color:var(--accent)}
+  .ftr-bottom{border-top:1px solid #3a3e44;padding-top:20px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:13px}
+  .map{width:100%;height:300px;border:0;border-radius:10px;margin-top:8px}
+
+  /* floating cta */
+  .fab{position:fixed;right:18px;bottom:18px;z-index:99;display:none}
+
+  @media(max-width:900px){
+    .about{grid-template-columns:1fr}
+    nav{display:none;order:5;width:100%;flex-direction:column;gap:0;padding-bottom:12px}
+    nav.open{display:flex}
+    nav a{padding:11px 0;border-bottom:1px solid #33373c}
+    .burger{display:block}
+    .hdr{justify-content:space-between}
+    .hdr .btn{padding:10px 16px;font-size:13px}
+    .phone{font-size:15px}
+    .form-row{grid-template-columns:1fr}
+    .fab{display:block}
+    section{padding:52px 0}
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ ШАПКА ============ -->
+<header>
+  <div class="wrap hdr">
+    <a class="logo" href="#top">
+      <span class="mark">Т</span>
+      <span>[НАЗВАНИЕ ЗАВОДА]<small>Производство трафаретов в Амурске</small></span>
+    </a>
+    <nav id="nav">
+      <a href="#top">Главная</a>
+      <a href="#uslugi">Услуги</a>
+      <a href="#materials">Материалы</a>
+      <a href="#portfolio">Портфолио</a>
+      <a href="#delivery">Доставка</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <div class="hdr-cta">
+      <a class="phone" href="tel:+7XXXXXXXXXX">+7 (XXX) XXX-XX-XX</a>
+      <a class="btn" href="#order">Отправить макет на расчет</a>
+      <button class="burger" onclick="document.getElementById('nav').classList.toggle('open')" aria-label="Меню"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ ГЛАВНЫЙ БАННЕР ============ -->
+<section class="hero" id="top">
+  <div class="wrap">
+    <h1>Изготовление трафаретов на заказ в&nbsp;Амурске</h1>
+    <p>Лазерная и плоттерная резка по вашим размерам. Работаем с заводами, строительными объектами и бизнесом. Собственное производство в Хабаровском крае — без посредников и наценок за доставку из центральной России.</p>
+    <div class="btns">
+      <a class="btn" href="#order">Рассчитать стоимость</a>
+      <a class="btn ghost-w" href="#portfolio">Смотреть примеры работ</a>
+    </div>
+    <div class="hero-badges">
+      <div><b>1–5 дней</b><span>срок изготовления</span></div>
+      <div><b>до 0,1 мм</b><span>точность резки</span></div>
+      <div><b>15 минут</b><span>расчет по макету</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ВИДЫ ТРАФАРЕТОВ ============ -->
+<section id="uslugi">
+  <div class="wrap">
+    <span class="tag">Каталог</span>
+    <h2>Виды трафаретов</h2>
+    <p class="sub">Изготавливаем по чертежам, эскизам, фотографиям и даже по готовым образцам. Достаточно фото — остальное сделаем мы.</p>
+    <div class="cards">
+      <div class="card">
+        <div class="ico">⚙</div>
+        <h3>Промышленные (маркировочные)</h3>
+        <p>Нанесение номеров, шильдов, маркировки труб, оборудования и тары. Многоразовые, износостойкие.</p>
+        <span class="mat">Металл • Жесткий ПВХ</span>
+      </div>
+      <div class="card">
+        <div class="ico">✦</div>
+        <h3>Для печати и аэрографии</h3>
+        <p>Трафареты под краску: декор стен, текстиль, фасады. Четкие контуры, любой масштаб рисунка.</p>
+        <span class="mat">Пленка ORACAL • ПЭТ</span>
+      </div>
+      <div class="card">
+        <div class="ico">⚡</div>
+        <h3>Одноразовые (пленочные)</h3>
+        <p>Для быстрой маркировки или творчества. Дешево, точно, на 1–2 применения.</p>
+        <span class="mat">Самоклеящаяся пленка</span>
+      </div>
+      <div class="card">
+        <div class="ico">▣</div>
+        <h3>Клинкерные / дорожные</h3>
+        <p>Для нанесения разметки или декора на брусчатку, асфальт и бетонные покрытия.</p>
+        <span class="mat">Износостойкие материалы</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ТЕХНОЛОГИИ И МАТЕРИАЛЫ ============ -->
+<section class="dark" id="materials">
+  <div class="wrap">
+    <span class="tag">Производство</span>
+    <h2>Технологии и материалы</h2>
+    <p class="sub">Не перепродаем заказы — режем у себя в цехе. Поэтому отвечаем за качество и сроки лично.</p>
+    <div class="cards">
+      <div class="card">
+        <div class="ico">◈</div>
+        <h3>Оборудование</h3>
+        <p>Современные CO₂-лазеры и плоттеры. Точность резки до 0,1 мм — соблюдаем геометрию даже на мелких деталях.</p>
+      </div>
+      <div class="card">
+        <div class="ico">▤</div>
+        <h3>Материалы</h3>
+        <p>ПЭТ (прочный пищевой пластик), нержавеющая сталь (для агрессивных сред), оцинковка, фанера, специализированные пленки.</p>
+      </div>
+      <div class="card">
+        <div class="ico">✓</div>
+        <h3>Контроль качества</h3>
+        <p>Проверяем геометрию и контуры каждого изделия перед отправкой. Брак не покидает цех.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ КАК МЫ РАБОТАЕМ ============ -->
+<section id="delivery">
+  <div class="wrap">
+    <span class="tag">Порядок работы</span>
+    <h2>Как мы работаем</h2>
+    <p class="sub">От макета до готового трафарета — четыре шага.</p>
+    <div class="steps">
+      <div class="step"><h3>Заявка</h3><p>Вы отправляете макет (CDR, PDF, AI) или просто фото и эскиз — доработаем сами.</p></div>
+      <div class="step"><h3>Согласование</h3><p>Проверяем техническую возможность, называем точную цену и срок.</p></div>
+      <div class="step"><h3>Производство</h3><p>Запускаем в работу. Сроки: 1–2 дня (пластик, пленка), 3–5 дней (металл).</p></div>
+      <div class="step"><h3>Получение</h3><p>Самовывоз в Амурске или отправка по Хабаровскому краю и РФ: СДЭК, Деловые Линии.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ПОРТФОЛИО ============ -->
+<section class="dark" id="portfolio">
+  <div class="wrap">
+    <span class="tag">Наши работы</span>
+    <h2>Портфолио</h2>
+    <p class="sub">Примеры изготовленных трафаретов. Замените заглушки на реальные снимки ваших изделий.</p>
+    <div class="filters">
+      <button class="filter on" data-f="all">Все</button>
+      <button class="filter" data-f="ind">Промышленные</button>
+      <button class="filter" data-f="dec">Декор</button>
+      <button class="filter" data-f="film">Пленка</button>
+    </div>
+    <div class="gal" id="gal">
+      <figure class="ph" data-c="ind"><img src="img/p1.jpg" alt="Трафарет для маркировки труб" loading="lazy"><figcaption>Трафарет для маркировки нефтяных труб</figcaption></figure>
+      <figure class="ph" data-c="dec"><img src="img/p2.jpg" alt="Декоративный трафарет" loading="lazy"><figcaption>Декоративный трафарет для интерьера</figcaption></figure>
+      <figure class="ph" data-c="ind"><img src="img/p3.jpg" alt="Маркировка ящиков" loading="lazy"><figcaption>Маркировка тары и ящиков для предприятия</figcaption></figure>
+      <figure class="ph" data-c="film"><img src="img/p4.jpg" alt="Одноразовый пленочный трафарет" loading="lazy"><figcaption>Одноразовый трафарет из пленки ORACAL</figcaption></figure>
+      <figure class="ph" data-c="dec"><img src="img/p5.jpg" alt="Логотип на стене" loading="lazy"><figcaption>Логотип компании на стене офиса</figcaption></figure>
+      <figure class="ph" data-c="ind"><img src="img/p6.jpg" alt="Трафарет из нержавейки" loading="lazy"><figcaption>Трафарет из нержавеющей стали для трубопровода</figcaption></figure>
+      <figure class="ph" data-c="film"><img src="img/p7.jpg" alt="Пленочные трафареты" loading="lazy"><figcaption>Пакет одноразовых пленочных трафаретов</figcaption></figure>
+      <figure class="ph" data-c="dec"><img src="img/p8.jpg" alt="Трафарет для брусчатки" loading="lazy"><figcaption>Клинкерный трафарет для брусчатки</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ЦЕНЫ ============ -->
+<section id="prices">
+  <div class="wrap">
+    <span class="tag">Цены</span>
+    <h2>Цены и сроки</h2>
+    <p class="sub">Ориентировочные цены на типовые заказы. Точная цена зависит от макета, размера и тиража.</p>
+    <table class="price-table">
+      <thead><tr><th>Изделие</th><th>Материал</th><th>Срок</th><th>Цена от</th></tr></thead>
+      <tbody>
+        <tr><td>Трафарет (до 30×30 см)</td><td>ПЭТ</td><td>1–2 дня</td><td>500 ₽</td></tr>
+        <tr><td>Трафарет (до 30×30 см)</td><td>Пленка ORACAL</td><td>1 день</td><td>350 ₽</td></tr>
+        <tr><td>Трафарет для маркировки труб</td><td>Жесткий ПВХ</td><td>2–3 дня</td><td>900 ₽</td></tr>
+        <tr><td>Трафарет сложной геометрии</td><td>Нержавеющая сталь</td><td>3–5 дней</td><td>2 500 ₽</td></tr>
+        <tr><td>Клинкерный / дорожный трафарет</td><td>Оцинковка</td><td>3–5 дней</td><td>1 800 ₽</td></tr>
+      </tbody>
+    </table>
+    <p class="price-note"><b>Точная цена зависит от макета.</b> Отправьте файл — рассчитаем за 15 минут. Оптовым и постоянным заказчикам — скидки.</p>
+  </div>
+</section>
+
+<!-- ============ О ЗАВОДЕ ============ -->
+<section class="dark" id="about">
+  <div class="wrap about">
+    <div>
+      <span class="tag">О производстве</span>
+      <h2>Наш цех в Амурске</h2>
+      <p style="color:#aab0b6">Мы находимся в Амурске. Это позволяет нам оперативно выполнять заказы для предприятий Хабаровского края и Дальнего Востока — без ожидания пересылок из центральной России и наценок посредников. Наш цех оснащен оборудованием для резки любых материалов. Работаем с [20XX] года.</p>
+      <ul>
+        <li>Собственное производство — отвечаем за каждый заказ</li>
+        <li>Работаем со снабженцами и технологами предприятий: договор, счета, безнал</li>
+        <li>Срочные заказы — от 1 рабочего дня</li>
+        <li>Консультация по выбору материала под вашу задачу — бесплатно</li>
+      </ul>
+      <a class="btn" href="#order">Обсудить задачу</a>
+    </div>
+    <div class="about-img"></div>
+  </div>
+</section>
+
+<!-- ============ ФОРМА ЗАЯВКИ ============ -->
+<section class="form-sec" id="order">
+  <div class="wrap">
+    <span class="tag">Заявка</span>
+    <h2>Отправить макет на расчет</h2>
+    <p class="sub">Прикрепите чертеж (CDR, AI, PDF) или фото и эскиз — ответим с точной ценой и сроком в течение 15 минут в рабочее время.</p>
+    <form class="form-box" id="orderForm" enctype="multipart/form-data">
+      <div class="form-row">
+        <div><label for="f-name">Имя *</label><input id="f-name" type="text" required placeholder="Как к вам обращаться"></div>
+        <div><label for="f-phone">Телефон *</label><input id="f-phone" type="tel" required placeholder="+7 (___) ___-__-__"></div>
+      </div>
+      <div><label for="f-city">Город / Населенный пункт</label><input id="f-city" type="text" placeholder="Амурск"></div>
+      <label for="f-file">Макет или фото (cdr, ai, pdf, jpg, png)</label>
+      <label class="file-wrap" for="f-file" id="fileLabel">📎 Нажмите, чтобы прикрепить файл<input type="file" id="f-file" accept=".cdr,.ai,.pdf,.jpg,.jpeg,.png" style="display:none" multiple></label>
+      <label for="f-comment">Комментарий: размеры, тираж, материал</label>
+      <textarea id="f-comment" rows="3" placeholder="Например: трафарет букв И-1, 40×30 см, ПЭТ, 5 шт."></textarea>
+      <label class="chk"><input type="checkbox" required><span>Согласен на обработку персональных данных в соответствии с <a href="privacy.html" style="color:var(--accent)">политикой конфиденциальности</a></span></label>
+      <button class="btn" type="submit" style="width:100%">Отправить на расчет</button>
+      <div class="form-msg" id="formMsg">Заявка отправлена! Мы свяжемся с вами в ближайшее время.</div>
+    </form>
+  </div>
+</section>
+
+<!-- ============ ПОДВАЛ ============ -->
+<footer id="contacts">
+  <div class="wrap">
+    <div class="ftr">
+      <div>
+        <h3>[НАЗВАНИЕ ЗАВОДА]</h3>
+        <p>Производство трафаретов.<br>Собственный цех в г. Амурск,<br>Хабаровский край.</p>
+        <p style="margin-top:12px">ИНН: [XXXXXXXXXXXX]<br>ОГРН: [XXXXXXXXXXXXXX]</p>
+      </div>
+      <div>
+        <h3>Контакты</h3>
+        <p><a href="tel:+7XXXXXXXXXX" style="font-weight:700;font-size:17px">+7 (XXX) XXX-XX-XX</a></p>
+        <p><a href="mailto:info@[domen].ru">info@[domen].ru</a></p>
+        <p style="margin-top:10px">
+          <a href="https://wa.me/7XXXXXXXXXX">WhatsApp</a> ·
+          <a href="https://t.me/[username]">Telegram</a>
+        </p>
+      </div>
+      <div>
+        <h3>Адрес</h3>
+        <p>г. Амурск, ул. [Улица], д. [Номер]<br>(производственная база)</p>
+        <p>Пн–Пт: [9:00–18:00]<br>Сб: [10:00–15:00]<br>Вс: выходной</p>
+      </div>
+    </div>
+    <!-- Вставьте код Яндекс.Карты из конструктора вместо src ниже -->
+    <iframe class="map" src="https://yandex.ru/map-widget/v1/?ll=137.0133%2C49.9166&z=13&pt=137.0133,49.9166,pm2orm" loading="lazy" title="Карта проезда"></iframe>
+    <div class="ftr-bottom">
+      <span>© [20XX]–2026 [НАЗВАНИЕ ЗАВОДА]. Все права защищены.</span>
+      <span><a href="privacy.html">Политика конфиденциальности</a> · <a href="#order">Форма заявки</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- Плавающая кнопка на мобильных -->
+<a class="btn fab" href="#order">Расчет</a>
+
+<script>
+  // Фильтр портфолио
+  document.querySelectorAll('.filter').forEach(b=>{
+    b.addEventListener('click',()=>{
+      document.querySelectorAll('.filter').forEach(x=>x.classList.remove('on'));
+      b.classList.add('on');
+      const f=b.dataset.f;
+      document.querySelectorAll('.ph').forEach(p=>{
+        p.style.display=(f==='all'||p.dataset.c===f)?'':'none';
+      });
+    });
+  });
+  // Заглушка отправки формы: подключите свой обработчик или бэкенд
+  document.getElementById('orderForm').addEventListener('submit',e=>{
+    e.preventDefault();
+    document.getElementById('formMsg').style.display='block';
+    e.target.reset();
+  });
+  // Имя выбранного файла
+  document.getElementById('f-file').addEventListener('change',function(){
+    if(this.files.length) document.getElementById('fileLabel').textContent='Прикреплено: '+this.files[0].name;
+  });
+</script>
+</body>
+</html>
